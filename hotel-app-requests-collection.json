@@ -1,0 +1,87 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "hotel-app",
+    "dateExported": "2023-10-22T00:45:09.711Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d7819c41-0739-4061-9e76-297e450ad945",
+            "colId": "bff8569c-e870-4b45-afd7-5293a50255d8",
+            "containerId": "",
+            "name": "GET hotels",
+            "url": "http://localhost:8081/hotel/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-22T00:44:24.995Z",
+            "modified": "2023-10-22T00:44:33.897Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "af97e3f1-84f0-4a2b-837b-9ea41aebb61a",
+            "colId": "bff8569c-e870-4b45-afd7-5293a50255d8",
+            "containerId": "",
+            "name": "GET hotel/findById",
+            "url": "http://localhost:8081/hotel/findById?id=1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-22T00:44:26.364Z",
+            "modified": "2023-10-22T00:44:39.146Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0229376b-5d28-4bb6-aabd-62efb73f8057",
+            "colId": "bff8569c-e870-4b45-afd7-5293a50255d8",
+            "containerId": "",
+            "name": "GET hotel/findByTravelOrderId",
+            "url": "http://localhost:8081/hotel/findByTravelOrderId?travelOrderId=1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-22T00:44:28.204Z",
+            "modified": "2023-10-22T00:44:43.667Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "travelOrderId",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "7750ac13-3469-4772-83aa-b56b2c2b8cab",
+            "colId": "bff8569c-e870-4b45-afd7-5293a50255d8",
+            "containerId": "",
+            "name": "POST newHotel",
+            "url": "http://localhost:8081/hotel",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-10-22T00:44:29.597Z",
+            "modified": "2023-10-22T00:44:49.007Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"travelOrderId\": \"1\",\n  \"nights\": \"5\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
